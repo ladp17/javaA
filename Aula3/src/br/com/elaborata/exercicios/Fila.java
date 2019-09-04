@@ -29,7 +29,7 @@ public class Fila extends Thread {
 	private long aleatorio() {
 		Random random = new Random();			
 		Long aleatorio;
-		final Long maxRandom = 1000L;
+		final Long maxRandom = 5000L;
 		
 		aleatorio = random.nextLong();
 		
