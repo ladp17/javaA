@@ -45,6 +45,7 @@ public class MainCurriculo {
 				alterar(new Curriculo());
 				break;
 			case 0:
+				JOptionPane.showMessageDialog(null, "Obrigado por utilizar o sistema, volte sempre!");
 				break sair;
 			default:
 				JOptionPane.showMessageDialog(null, "Opção inválida, favor tentar novamente");
@@ -130,16 +131,6 @@ public class MainCurriculo {
 
 	}
 
-	private static void serializar(Serializable obj) throws FileNotFoundException, IOException {
-		ObjectOutputStream output = 
-				new ObjectOutputStream(
-						new FileOutputStream("curriculo.ser", true));
-
-		output.writeObject(obj);
-		output.flush();
-		output.close();
-	}
-	
 	
 
 	private static Object desSerializar() throws FileNotFoundException, IOException, ClassNotFoundException {
