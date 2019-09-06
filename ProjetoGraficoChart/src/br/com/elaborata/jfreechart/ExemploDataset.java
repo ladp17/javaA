@@ -26,7 +26,7 @@ import org.jfree.ui.RefineryUtilities;
 public class ExemploDataset extends ApplicationFrame{
 	
 	private static final long serialVersionUID = 1L;
-
+	
 	public ExemploDataset(String title) {
 		
 		super(title);
@@ -68,7 +68,6 @@ public class ExemploDataset extends ApplicationFrame{
 		//Customizar o renderer
 		final LineAndShapeRenderer renderer = (LineAndShapeRenderer) plot.getRenderer();
 //		renderer.setSeriesStroke(0, new BasicStroke(2.0f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND));
-		
 		
 		return chart;
 		
