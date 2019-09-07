@@ -24,6 +24,17 @@ public class ExercicioExtra {
 					
 		}
 		
+//		impressoras.imprimeLista();
+//		
+//		System.out.println();
+//		System.out.println("---------------------------------------------------------");
+//		System.out.println();
+		
+		impressoras.getLista().remove(0);
+		
+		//era pra remover o marca2, mas nao esta
+		impressoras.remover(0);
+		
 		impressoras.imprimeLista();
 	}
 

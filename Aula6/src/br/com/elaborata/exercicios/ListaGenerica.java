@@ -1,9 +1,12 @@
-/**
+/*
+*
  * 
  */
 package br.com.elaborata.exercicios;
 
 import java.util.ArrayList;
+
+import java.util.List;
 
 /**
  * @author ladp17
@@ -11,16 +14,16 @@ import java.util.ArrayList;
  */
 public class ListaGenerica <T> {
 
-	private ArrayList<T> lista = new ArrayList<T>();
+	private List<T> lista = new ArrayList<T>();
 	
 	public ListaGenerica() {
 	}
 
-	public ArrayList<T> getLista() {
+	public List<T> getLista() {
 		return lista;
 	}
 
-	public void setLista(ArrayList<T> lista) {
+	public void setLista(List<T> lista) {
 		this.lista = lista;
 	}
 
@@ -29,17 +32,20 @@ public class ListaGenerica <T> {
 		lista.add(item);
 		
 	}
+
 	
-	public void remover(Integer index) {
+// remover por index n estava funcionando
+
+	public void remover(int index) {
 		
-		lista.remove(index);
-		
+		this.lista.remove(index);
+				
 	}
 	
 	public void remover(T item) {
 		
-		lista.remove(item);
-		
+		this.lista.remove(item);
+
 	}
 	
 	public void imprimeLista() {
@@ -49,7 +55,5 @@ public class ListaGenerica <T> {
 			System.out.println(t);
 			
 		}
-		
 	}
-	
 }
