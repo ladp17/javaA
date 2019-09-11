@@ -106,14 +106,15 @@ public class Funcionario {
 	public String toString() {
 
 		StringBuffer strb = new StringBuffer();
+		strb.append("Funcionario\n");
 		strb.append("Nome: " + this.nome + "\n");
 		strb.append("Telefone: " + this.telefone + "\n");
-		strb.append("Sexo: " + this.sexo + "\n");
-		strb.append("Endereço: " + this.endereco + "\n");
-		strb.append("Idade: " + this.idade + "\n");
-		strb.append("Cidade: " + this.cidade + "\n");
-		strb.append("Estado: " + this.estado + "\n");
-		strb.append("País: " + this.pais);
+//		strb.append("Sexo: " + this.sexo + "\n");
+//		strb.append("Endereço: " + this.endereco + "\n");
+//		strb.append("Idade: " + this.idade + "\n");
+//		strb.append("Cidade: " + this.cidade + "\n");
+//		strb.append("Estado: " + this.estado + "\n");
+//		strb.append("País: " + this.pais);
 
 		return strb.toString();
 	}

@@ -24,7 +24,7 @@ public class OrganizaFesta {
 			} else if( obj instanceof Funcionario) {
 				System.out.println((Funcionario)obj);
 			}
-			System.out.println("\n");
+			System.out.println();
 		}
 		
 	}
