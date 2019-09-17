@@ -65,19 +65,19 @@ public class Tabela {
 	
 	public Collection<Funcionario> listarFuncionario(String arquivo) {
 		
-		String sql = "SELECT * FROM tb_funcionario;";
-		
-		Statement select = conexao.createStatement();
-		
-		ResultSet resultado = select.executeQuery(sql);
-		
-		while (resultado.next()) {
-			
-			//aqui tem que fazer os resultados.get...
-			
-		}
-				
-		return funcionarios;
+//		String sql = "SELECT * FROM tb_funcionario;";
+//		
+//		Statement select = conexao.createStatement();
+//		
+//		ResultSet resultado = select.executeQuery(sql);
+//		
+//		while (resultado.next()) {
+//			
+//			//aqui tem que fazer os resultados.get...
+//			
+//		}
+//				
+		return null;
 			
 		}
 
@@ -90,26 +90,26 @@ public class Tabela {
 	
 	public Collection<Cidade> listarCidade(String arquivo) {
 		
-		Collection<Cidade> cidades = new ArrayList<Cidade>();
-		
-			
-			try {
-				
-				scanner = new Scanner(new File(arquivo));
-				
-				while (scanner.hasNext()) {
-					
-					cidades.add(preencheCidade(scanner.nextLine()));
-					
-				}
-				
-				return cidades;
-				
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
+//		Collection<Cidade> cidades = new ArrayList<Cidade>();
+//		
+//			
+//			try {
+////				
+////				scanner = new Scanner(new File(arquivo));
+////				
+////				while (scanner.hasNext()) {
+////					
+////					cidades.add(preencheCidade(scanner.nextLine()));
+//					
+//				}
+//				
+//				return cidades;
+//				
+//			} catch (FileNotFoundException e) {
+//				e.printStackTrace();
 				return null;
-			} 
-			
+//			} 
+//			
 		}
 	
 }
